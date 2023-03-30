@@ -3,3 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+.sinistra{
+    width: 120px;
+    height: calc( 100vh - 56px );
+    background-color: black;
+}
+.height100-{
+    height: 100%;
+}
+.destra{
+    width: calc( 100% - 120px);
+    background-color: aqua;
+}
+.sinistra a{
+    color: white;
+    text-decoration: none;
+}
