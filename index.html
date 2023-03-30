@@ -43,10 +43,10 @@
     </header>
     <main>
         <section class="container-fluid">
-            <div class="row">
+            <div class="row h-auto">
 <!--sinistra-->
-                <div class="sinistra text-center text-white">
-                    <div class="d-flex flex-column justify-content-between height100-">
+                <div class="sinistra text-center text-white h-auto">
+                    <div class="d-flex flex-column justify-content-between h-100">
                         <div class="col-12 d-flex flex-column">
                             <a class="pb-2 pt-2" href="#">
                                 <i class="fa-solid fa-house"></i> <span class="d-none d-lg-inline-block">Home</span> 
@@ -72,13 +72,13 @@
                 <div class="destra">
 <!--sezione azzurra-->             
                     <div class="row mio-blue flex-md-row-reverse text-white">
-                        <div class="col-sm-12 col-md-4 d-flex align-items-baseline pt-2 pb-2">
-                            <h5>Nuovo studente</h5>
+                        <div class="col-sm-12 col-md-4 col-lg-3 d-flex align-items-baseline pt-2 pb-2">
+                            <p>Nuovo studente</p>
                             <button type="button" class="btn btn-outline-light mx-1"><i class="fa-solid fa-plus"></i></button>
                         </div>
-                        <div class="col-sm-12 col-md-4 order-md-1 pt-2 pb-2">
+                        <div class="col-sm-12 col-md-4 order-md-1 col-lg-6 pt-2 pb-2">
                             <div class="d-flex align-items-center pb-2">
-                               <h4>Boolean</h4>
+                               <h5>Boolean</h5>
                                <button class="btn mio-blue-bottone text-white mx-1 btn-sm mio-f-size-bottom">Piano blaze</button> 
                             </div>
                             <div class="d-flex align-items-center"> 
@@ -89,8 +89,8 @@
                                <button class="d-none d-lg-inline-block btn mio-blue-bottone text-white mx-1 btn-sm mio-f-size-bottom">Boolean blog app</button>  
                             </div>
                         </div>
-                        <div class="col-sm-12 col-md-4 pt-2 pb-2">
-                            <h5>Studenti online negli ultimi 30 minuti</h5>
+                        <div class="col-sm-12 col-md-4 col-lg-3 pt-2 pb-2">
+                            <p>Studenti online negli ultimi 30 minuti</p>
                             <p>125</p>
                         </div>
                     </div>
@@ -102,9 +102,34 @@
                             </div>
                             <div>prova</div>
                         </div>
-                        <div class="col-12 col-lg-4"><!--parte destra-->
-                            <div>prova</div>
-                            <div>prova</div>
+                        <div class="col-12 col-lg-4 "><!--parte destra-->
+                            
+                        <div class="card mt-2">
+                            <div class="card-header">
+                                Todo
+                            </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><input class="form-check-input mx-1" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">Kickoff nuove classi</li>
+                                    <li class="list-group-item "><input class="form-check-input mx-1" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">Lezione su Bootstrap 5 in classe #75</li>
+                                    <li class="list-group-item "><input class="form-check-input mx-1" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">Controllare username github studenti</li>
+                                </ul>
+                            </div>
+                            <div class="card mt-2">
+                                <img src="img/stats.jpeg" class="card-img-top" alt="stats">
+                                <div class="card-body">
+                                  
+                                  <ul class="list-group list-group-flush border-o">
+                                    <h5 class="px-3">Utenti attivi</h5>
+                                    <li class="card-title list-group-item">
+                                    Lista degli utenti attivi in èiattaforma nell'ultimo mese</li>
+                                    <li class="list-group-item">Gennaio: 1200</li>
+                                    <li class="list-group-item">Febbraio: 800</li>
+                                    <li class="list-group-item">Marzo: 1500</li>
+                                    <li class="list-group-item"><a href="#">Visualizza report approfondito</a></li>
+                                  </ul>
+                                  
+                                </div>
+                              </div>
                         </div>
                     </div>
                 </div>
