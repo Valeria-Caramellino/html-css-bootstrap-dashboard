@@ -24,7 +24,7 @@ body{
     text-decoration: none;
 }
 .sinistra a:hover{
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(225, 225, 225, 0.6);
 }
 .mio-blue{
     background-color: #1b72e8;
