@@ -38,3 +38,8 @@ body{
 .mio-w2rem{
     width: 2rem;
 }
+
+/*grandezza offcavans*/
+.width--{
+    width: 600px !important; 
+}

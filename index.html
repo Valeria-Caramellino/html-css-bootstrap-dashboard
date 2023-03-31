@@ -79,7 +79,7 @@
                     <div class="row mio-blue flex-md-row-reverse text-white">
                         <div class="col-sm-12 col-md-4 col-lg-3 d-flex align-items-baseline pt-2 pb-2">
                             <p>Nuovo studente</p>
-                            <button type="button" class="btn btn-outline-light mx-1"><i class="fa-solid fa-plus"></i></button>
+                            <button class=" btn btn-outline-light mx-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
                         </div>
                         <div class="col-sm-12 col-md-4 order-md-1 col-lg-6 pt-2 pb-2">
                             <div class="d-flex align-items-center pb-2">
@@ -304,7 +304,7 @@
                                     </ul>
                                 </div>
 <!--img stats-->                                
-                                <div class="card mt-2">
+                                <div class="card mt-2 mb-2">
                                     <img src="img/stats.jpeg" class="card-img-top" alt="stats">
                                     
                                     <div class="card-body">
@@ -325,6 +325,80 @@
                 </div>
             </div>
         </section>
+<!--offcavans-->
+        <div class="offcanvas offcanvas-end width--" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body col-12">
+                <div class="row">
+                    <div class="d-flex flex-wrap justify-content-between" >
+                        <div class="col-5">
+                            <p class="mx-1">Nome</p>
+                            <input class="form-control" type="text" placeholder="Inserisci nome" aria-label="default input example">
+                        </div>
+                        <div class="col-5">
+                            <p class="mx-1">Cognome</p>
+                            <input class="form-control" type="text" placeholder="InserisciCognome" aria-label="default input example">
+                        </div>
+                        <div class="col-5 mt-1">
+                            <p class="mx-1">Mail</p>
+                        
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text" id="addon-wrapping">@</span>
+                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                            </div>
+                        </div>
+                        <div class="col-5 mt-1">
+                            <p class="mx-1">Password</p>
+                            <input class="form-control" type="text" placeholder="Inserisci Password" aria-label="default input example">
+                        </div>
+                        <div class="col-12 mt-1">
+                            <p class="mx-1">Indirizzo</p>
+                            <input class="form-control" type="text" placeholder="Inserisci Indirizzo" aria-label="default input example">
+                        </div>
+                        <div class="col-5 mt-1">
+                            <p class="mx-1">Città</p>
+                            <input class="form-control" type="text" placeholder="Inserisci Città" aria-label="default input example">
+                        </div>
+                        <div class="col-3 mt-1">
+                            <p class="mx-1">Stato</p>
+                            <select class="form-select" id="inputGroupSelect02">
+                                <option selected=""></option>
+                                <option value="1">stato 1</option>
+                                <option value="2">stato 2</option>
+                                <option value="3">stato 3</option>
+                            </select>
+                        </div>
+
+                        <div class="col-2 mt-1">
+                            <p class="mx-1">Cap</p>
+                            <input class="form-control" type="text" placeholder="Cap" aria-label="default input example">
+                        </div>
+                        <div class="col-12 mt-1">
+                            <p class="mx-1">Foto</p>
+                            <div class="input-group mb-3">
+                                <label class="input-group-text" for="inputGroupSelect01">Scegli File</label>
+                                <select class="form-select" id="inputGroupSelect01">
+                                    <option selected=""></option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <p> <input type="checkbox" name="seleziona" id=""> Seleziona per proseguire</p>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-primary">Salva</button>
+                            <button type="button" class="btn btn-warning">Svuota</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
