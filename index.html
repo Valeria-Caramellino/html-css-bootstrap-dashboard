@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bootstrap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<!--testata-->    
     <header>
         <nav class="navbar bg-light">
             <div class="container-fluid">
@@ -50,19 +53,19 @@
                 <div class="sinistra text-center text-white">
                     <div class="d-flex flex-column justify-content-between h-100">
                         <div class="col-12 d-flex flex-column">
-                            <a class="pb-2 pt-2" href="#">
+                            <a class="pb-2 pt-2 mb-2" href="#">
                                 <i class="fa-solid fa-house"></i> <span class="d-none d-lg-inline-block">Home</span> 
                             </a>
-                            <a class="pb-2" href="#">
+                            <a class="pb-2 pt-2 mb-2" href="#">
                                 <i class="fa-solid fa-chart-simple"></i>
                                 <span class="d-none d-lg-inline-block">Stats</span>
                             </a>
-                            <a class="pb-2" href="#">
+                            <a class="pb-2 pt-2 mb-2" href="#">
                                 <i class="fa-solid fa-signal"></i>
                                 <span class="d-none d-lg-inline-block">Signals</span>
                             </a>
                         </div>
-                        <div class="col-12 pb-2">
+                        <div class="col-12 ">
                             <a href="#">
                                 <i class="fa-solid fa-gear"></i>
                                 <span class="d-none d-lg-inline-block">Admin</span>
@@ -99,6 +102,7 @@
 <!--sezione card-->
                     <div class="row ">
                         <div class="col-12 col-lg-8"><!--parte sinista-->
+<!--tabella-->                           
                             <div class="card col-12 mt-2">
                                 <div class="card-header">
                                     Prossime classi
@@ -245,41 +249,79 @@
                                     </tbody>
                                 </table>
                             </div>
-
-                            <div>prova</div>
-                            </div>
-                            <div class="col-12 col-lg-4 "><!--parte destra-->
-                            
+<!--faq-->
                             <div class="card mt-2">
                                 <div class="card-header">
-                                Todo
+                                F.A.Q.
                                 </div>
+                                <div class="card-body">
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        Come aggiungere un nuovo studente?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, unde? Atque facilis consectetur vel sint asperiores, quam adipisci consequatur dignissimos unde amet qui veniam modi eius distinctio aut id animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quia explicabo quam at, voluptates laboriosam, earum nam odit, eum nihil ut. Eius error, officiis dolores maxime laborum expedita iure! Laboriosam?.</div>
+                                    </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        Come posso accedere alle informazioni del mio account?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati ducimus minus, aliquid, esse nulla reiciendis ipsam odio fugiat eum iure suscipit, placeat voluptatibus deleniti ipsa fugit dignissimos! Enim, optio totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, animi maiores. Consequatur sapiente laboriosam veniam. Nobis nihil voluptate perferendis, mollitia, laboriosam ratione aperiam laborum accusamus quam culpa in eaque illum!</div>
+                                    </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                        Posso usare questa dashboard da mobile?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis eum eligendi labore maiores odit libero accusamus, consequatur et atque fugiat perferendis impedit ut excepturi ipsam consequuntur in itaque architecto cupiditate. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae repudiandae corporis voluptas voluptatum numquam, sit aspernatur molestiae assumenda. Veritatis aperiam est eveniet nam odit ratione, ex hic quam saepe sed?.</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+<!--parte destra-->                            
+                            <div class="col-12 col-lg-4 ">
+ 
+                            <div class="card mt-2">
+<!--todo-->                                
+                                <div class="card-header">Todo</div>
+                           
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item"><input class="form-check-input mx-1" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">Kickoff nuove classi</li>
                                         <li class="list-group-item "><input class="form-check-input mx-1" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">Lezione su Bootstrap 5 in classe #75</li>
                                         <li class="list-group-item "><input class="form-check-input mx-1" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">Controllare username github studenti</li>
                                     </ul>
                                 </div>
+<!--img stats-->                                
                                 <div class="card mt-2">
                                     <img src="img/stats.jpeg" class="card-img-top" alt="stats">
+                                    
                                     <div class="card-body">
-                                  
                                         <ul class="list-group list-group-flush border-o">
-                                        <h5 class="px-3">Utenti attivi</h5>
-                                        <li class="card-title list-group-item">
-                                        Lista degli utenti attivi in èiattaforma nell'ultimo mese</li>
-                                        <li class="list-group-item">Gennaio: 1200</li>
-                                        <li class="list-group-item">Febbraio: 800</li>
-                                        <li class="list-group-item">Marzo: 1500</li>
-                                        <li class="list-group-item"><a href="#">Visualizza report approfondito</a></li>
-                                    </ul>
-                                  
+                                            <h5 class="px-3">Utenti attivi</h5>
+                                            <li class="card-title list-group-item">
+                                            Lista degli utenti attivi in èiattaforma nell'ultimo mese</li>
+                                            <li class="list-group-item">Gennaio: 1200</li>
+                                            <li class="list-group-item">Febbraio: 800</li>
+                                            <li class="list-group-item">Marzo: 1500</li>
+                                            <li class="list-group-item"><a href="#">Visualizza report approfondito</a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-             
                 </div>
             </div>
         </section>

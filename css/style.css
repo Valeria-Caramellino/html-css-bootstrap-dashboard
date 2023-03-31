@@ -23,6 +23,9 @@ body{
     color: white;
     text-decoration: none;
 }
+.sinistra a:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
 .mio-blue{
     background-color: #1b72e8;
 }
