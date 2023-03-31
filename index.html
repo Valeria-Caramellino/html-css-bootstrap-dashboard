@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<!--testata-->    
+<!--testata--> 
+<!--piccola sezione del menu a tendina sulla campanella-->   
     <header>
         <nav class="navbar bg-light">
             <div class="container-fluid">
@@ -29,7 +30,7 @@
                         <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="addon-wrapping">
                       </div>
                 </div>
-                <div class="col-2 d-flex">
+                <div class="col-2 d-flex position-relative">
                     <button class="btn d-none d-lg-block" type="submit">
                         <i class="fa-solid fa-list"></i>
                     </button>
@@ -39,9 +40,23 @@
                     <button class="btn d-none d-lg-block" type="submit">
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </button>
-                    <button class="btn text-warning" type="submit">
+<!--                <button class="btn text-warning" type="submit">
+                        <i class="fa-solid fa-bell"></i>
+                    </button>-->
+                    <button class="btn text-warning" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">
                         <i class="fa-solid fa-bell"></i>
                     </button>
+                    <div class="row position-absolute start-0">
+                        <div class="col-12">
+                            <div class="multi-collapse collapse" id="multiCollapseExample1">
+                                <div class="card card-body">
+                                    <p>Profilo</p>
+                                    <p>Fatturazione</p>
+                                    <p>Logout</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div> 
             </div>
         </nav>
