@@ -3,17 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Roboto', sans-serif;
+}
 .sinistra{
     width: 120px;
-    height: calc( 150vh - 56px );
+    height: calc( 100vh - 56px );
     background-color: black;
 }
-.height100-{
-    height: 100%;
+.mio-card-height{
+    height: calc( 100vh - 176px );
+    overflow-y: scroll;
 }
 .destra{
     width: calc( 100% - 120px);
     background-color: aqua;
+}
+.mio-card{
+    height: calc( 100vh - 176px );
 }
 .sinistra a{
     color: white;
