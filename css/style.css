@@ -9,18 +9,15 @@ body{
 .sinistra{
     width: 120px;
     height: calc( 100vh - 56px );
-    background-color: black;
+    background-color: #051e34;
+    background-image: url( ../img/sidebar-bg.png);
 }
 .mio-card-height{
-    height: calc( 100vh - 176px );
+    height: calc( 100vh - 56px );
     overflow-y: scroll;
 }
 .destra{
     width: calc( 100% - 120px);
-    background-color: aqua;
-}
-.mio-card{
-    height: calc( 100vh - 176px );
 }
 .sinistra a{
     color: white;
@@ -34,4 +31,7 @@ body{
 }
 .mio-f-size-bottom{
     font-size: 0.75;
+}
+.mio-w2rem{
+    width: 2rem;
 }
