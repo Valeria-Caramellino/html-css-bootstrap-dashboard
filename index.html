@@ -5,32 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bootstrap</title>
+
+    <!--link cdn bootrastrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+    <!--link cdn font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <!--link google font-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!--link my style-->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<!--testata--> 
-<!--piccola sezione del menu a tendina sulla campanella-->   
+  
     <header>
+
+        <!--index nav-->
         <nav class="navbar bg-light">
+
             <div class="container-fluid">
+
+                <!--side left-->
                 <div class="col-2">
                     <a class="navbar-brand d-flex" href="#">
                         <img class="img-fluid" src="img/mobile-logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-center">
                         <span class="d-none d-lg-block">Boolean</span> 
                     </a>
                 </div>
+
+                <!--central-->
                 <div class="col-8">
                     <div class="input-group flex-nowrap">
                         <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-magnifying-glass"></i></span>
                         <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="addon-wrapping">
                       </div>
                 </div>
+
+                <!--side right-->
                 <div class="col-2 d-flex ">
+
                     <button class="btn d-none d-lg-block" type="submit">
                         <i class="fa-solid fa-list"></i>
                     </button>
@@ -40,10 +57,14 @@
                     <button class="btn d-none d-lg-block" type="submit">
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </button>
+
                     <div class="position-relative">
+
                        <button class="btn text-warning" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">
                             <i class="fa-solid fa-bell"></i>
                         </button>
+
+                        <!--section menu collapse in fa-bell--> 
                         <div class="row position-absolute mio-z-index start-0">
                             <div class="col-12">
                                 <div class="multi-collapse collapse" id="multiCollapseExample1">
@@ -59,14 +80,23 @@
                     
                 </div> 
             </div>
+
         </nav>
+        <!--end nav-->
+
     </header>
+
     <main>
+
         <section class="container-fluid">
             <div class="row h-auto">
-<!--sinistra-->
+                
+                <!--side left main-->
                 <div class="sinistra text-center text-white">
+
                     <div class="d-flex flex-column justify-content-between h-100">
+
+                        <!--link top-->
                         <div class="col-12 d-flex flex-column">
                             <a class="pb-2 pt-2 mb-2" href="#">
                                 <i class="fa-solid fa-house"></i> <span class="d-none d-lg-inline-block">Home</span> 
@@ -80,27 +110,38 @@
                                 <span class="d-none d-lg-inline-block">Signals</span>
                             </a>
                         </div>
+                        
+                        <!--link down-->
                         <div class="col-12 ">
                             <a href="#">
                                 <i class="fa-solid fa-gear"></i>
                                 <span class="d-none d-lg-inline-block">Admin</span>
                             </a>
                         </div>
+
                     </div>
+
                 </div>
-<!--destra-->
+                <!--end side left main-->
+
+                <!--side right main-->
                 <div class="destra mio-card-height ">
-<!--sezione azzurra-->             
+
+                    <!--section blue responsive-->             
                     <div class="row mio-blue flex-md-row-reverse text-white ">
+
                         <div class="col-sm-12 col-md-4 col-lg-3 d-flex align-items-baseline pt-2 pb-2">
                             <p>Nuovo studente</p>
                             <button class=" btn btn-outline-light mx-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
                         </div>
+
                         <div class="col-sm-12 col-md-4 order-md-1 col-lg-6 pt-2 pb-2">
+
                             <div class="d-flex align-items-center pb-2">
                                <h5>Boolean</h5>
                                <button class="btn mio-blue-bottone text-white mx-1 btn-sm mio-f-size-bottom">Piano blaze</button> 
                             </div>
+
                             <div class="d-flex align-items-center"> 
                                <button class="btn mio-blue-bottone text-white mx-1 btn-sm mio-f-size-bottom">3app</button> >> 
                                <button class="d-lg-none btn mio-blue-bottone text-white mx-1 btn-sm mio-f-size-bottom"><i class="fa-solid fa-plus"></i></button>
@@ -108,21 +149,31 @@
                                <button class="d-none d-lg-inline-block btn mio-blue-bottone text-white mx-1 btn-sm mio-f-size-bottom">Boolean web app</button>
                                <button class="d-none d-lg-inline-block btn mio-blue-bottone text-white mx-1 btn-sm mio-f-size-bottom">Boolean blog app</button>  
                             </div>
+
                         </div>
+
                         <div class="col-sm-12 col-md-4 col-lg-3 pt-2 pb-2">
                             <p>Studenti online negli ultimi 30 minuti</p>
                             <p>125</p>
                         </div>
+
                     </div>
-<!--sezione card-->
+
+                    <!--section multi-card-->
                     <div class="row ">
-                        <div class="col-12 col-lg-8"><!--parte sinista-->
-<!--tabella-->                           
+
+                        <div class="col-12 col-lg-8"><!--side left-->
+
+                            <!--card table-->                           
                             <div class="card col-12 mt-2">
+
                                 <div class="card-header">
                                     Prossime classi
                                 </div>
+
+                                <!--index table-->
                                 <table class="table ">
+
                                     <thead>
                                         <tr>
                                             <th class="col-6">Nome</th>
@@ -132,6 +183,7 @@
                                             <th class="col-2 text-center">Azioni</th>
                                         </tr>
                                     </thead>
+
                                     <tbody>
                                         <tr>
                                             <td>
@@ -262,67 +314,110 @@
                                             </td>
                                         </tr>
                                     </tbody>
+
                                 </table>
+                                <!--finish table-->
+
                             </div>
-<!--faq-->
+
+                            <!--card f.a.q-->
                             <div class="card mt-2">
+
                                 <div class="card-header">
                                 F.A.Q.
                                 </div>
+
                                 <div class="card-body">
-                                <div class="accordion accordion-flush" id="accordionFlushExample">
-                                    <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                        Come aggiungere un nuovo studente?
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, unde? Atque facilis consectetur vel sint asperiores, quam adipisci consequatur dignissimos unde amet qui veniam modi eius distinctio aut id animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quia explicabo quam at, voluptates laboriosam, earum nam odit, eum nihil ut. Eius error, officiis dolores maxime laborum expedita iure! Laboriosam?.</div>
+
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        
+                                        <!--one card collapse-->
+                                        <div class="accordion-item">
+
+                                            <h2 class="accordion-header" id="flush-headingOne">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                Come aggiungere un nuovo studente?
+                                                </button>
+                                            </h2>
+
+                                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                                
+                                                <div class="accordion-body">
+                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, unde? Atque facilis consectetur vel sint asperiores, quam adipisci consequatur dignissimos unde amet qui veniam modi eius distinctio aut id animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quia explicabo quam at, voluptates laboriosam, earum nam odit, eum nihil ut. Eius error, officiis dolores maxime laborum expedita iure! Laboriosam?.</p>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <!--two card collapse-->
+                                        <div class="accordion-item">
+
+                                            <h2 class="accordion-header" id="flush-headingTwo">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                Come posso accedere alle informazioni del mio account?
+                                                </button>
+                                            </h2>
+
+                                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati ducimus minus, aliquid, esse nulla reiciendis ipsam odio fugiat eum iure suscipit, placeat voluptatibus deleniti ipsa fugit dignissimos! Enim, optio totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, animi maiores. Consequatur sapiente laboriosam veniam. Nobis nihil voluptate perferendis, mollitia, laboriosam ratione aperiam laborum accusamus quam culpa in eaque illum!</p> 
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <!--three card collapse-->
+                                        <div class="accordion-item">
+                                            
+                                            <h2 class="accordion-header" id="flush-headingThree">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                Posso usare questa dashboard da mobile?
+                                                </button>
+                                            </h2>
+
+                                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <p>
+                                                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis eum eligendi labore maiores odit libero accusamus, consequatur et atque fugiat perferendis impedit ut excepturi ipsam consequuntur in itaque architecto cupiditate. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae repudiandae corporis voluptas voluptatum numquam, sit aspernatur molestiae assumenda. Veritatis aperiam est eveniet nam odit ratione, ex hic quam saepe sed?.     
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
                                     </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingTwo">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                        Come posso accedere alle informazioni del mio account?
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati ducimus minus, aliquid, esse nulla reiciendis ipsam odio fugiat eum iure suscipit, placeat voluptatibus deleniti ipsa fugit dignissimos! Enim, optio totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, animi maiores. Consequatur sapiente laboriosam veniam. Nobis nihil voluptate perferendis, mollitia, laboriosam ratione aperiam laborum accusamus quam culpa in eaque illum!</div>
-                                    </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingThree">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                        Posso usare questa dashboard da mobile?
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis eum eligendi labore maiores odit libero accusamus, consequatur et atque fugiat perferendis impedit ut excepturi ipsam consequuntur in itaque architecto cupiditate. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae repudiandae corporis voluptas voluptatum numquam, sit aspernatur molestiae assumenda. Veritatis aperiam est eveniet nam odit ratione, ex hic quam saepe sed?.</div>
-                                    </div>
-                                    </div>
+
                                 </div>
-                                </div>
+
                             </div>
-                            </div>
-<!--parte destra-->                            
-                            <div class="col-12 col-lg-4 ">
+
+                        </div><!--end side left-->
+                            
+                        
+                        <div class="col-12 col-lg-4 "><!--side right-->
  
                             <div class="card mt-2">
-<!--todo-->                                
+
+                                <!--section card todo whit checkbox-->                                
                                 <div class="card-header">Todo</div>
                            
+                                <div>
+
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item"><input class="form-check-input mx-1" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">Kickoff nuove classi</li>
                                         <li class="list-group-item "><input class="form-check-input mx-1" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">Lezione su Bootstrap 5 in classe #75</li>
                                         <li class="list-group-item "><input class="form-check-input mx-1" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">Controllare username github studenti</li>
                                     </ul>
+
                                 </div>
-<!--img stats-->                                
+
+                                <!--section card img stats-->                                
                                 <div class="card mt-2 mb-2">
+
                                     <img src="img/stats.jpeg" class="card-img-top" alt="stats">
                                     
                                     <div class="card-body">
+
                                         <ul class="list-group list-group-flush border-o">
                                             <h5 class="px-3">Utenti attivi</h5>
                                             <li class="card-title list-group-item">
@@ -332,31 +427,50 @@
                                             <li class="list-group-item">Marzo: 1500</li>
                                             <li class="list-group-item"><a href="#">Visualizza report approfondito</a></li>
                                         </ul>
+
                                     </div>
+
                                 </div>
+
                             </div>
-                        </div>
+
+                        </div><!--end side right-->
+
                     </div>
+                    <!--end section multi-card-->
+
                 </div>
+                <!--end side right main-->
+
             </div>
         </section>
-<!--offcavans-->
+
+        <!--section offcavans-->
         <div class="offcanvas offcanvas-end width--" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+
+            <!--header offcavans-->
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
+
+            <!--body offcavans-->
             <div class="offcanvas-body col-12">
+                
                 <div class="row">
+
                     <div class="d-flex flex-wrap justify-content-between" >
+
                         <div class="col-5">
                             <p class="mx-1">Nome</p>
                             <input class="form-control" type="text" placeholder="Inserisci nome" aria-label="default input example">
                         </div>
+
                         <div class="col-5">
                             <p class="mx-1">Cognome</p>
                             <input class="form-control" type="text" placeholder="InserisciCognome" aria-label="default input example">
                         </div>
+
                         <div class="col-5 mt-1">
                             <p class="mx-1">Mail</p>
                         
@@ -365,33 +479,41 @@
                                 <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
                             </div>
                         </div>
+
                         <div class="col-5 mt-1">
                             <p class="mx-1">Password</p>
                             <input class="form-control" type="text" placeholder="Inserisci Password" aria-label="default input example">
                         </div>
+
                         <div class="col-12 mt-1">
                             <p class="mx-1">Indirizzo</p>
                             <input class="form-control" type="text" placeholder="Inserisci Indirizzo" aria-label="default input example">
                         </div>
+
                         <div class="col-5 mt-1">
                             <p class="mx-1">Città</p>
                             <input class="form-control" type="text" placeholder="Inserisci Città" aria-label="default input example">
                         </div>
+
                         <div class="col-3 mt-1">
                             <p class="mx-1">Stato</p>
+
                             <select class="form-select" id="inputGroupSelect02">
                                 <option selected=""></option>
                                 <option value="1">stato 1</option>
                                 <option value="2">stato 2</option>
                                 <option value="3">stato 3</option>
                             </select>
+
                         </div>
 
                         <div class="col-2 mt-1">
                             <p class="mx-1">Cap</p>
                             <input class="form-control" type="text" placeholder="Cap" aria-label="default input example">
                         </div>
+
                         <div class="col-12 mt-1">
+
                             <p class="mx-1">Foto</p>
                             <div class="input-group mb-3">
                                 <label class="input-group-text" for="inputGroupSelect01">Scegli File</label>
@@ -402,18 +524,28 @@
                                     <option value="3">Three</option>
                                 </select>
                             </div>
+
                         </div>
+
                         <div class="col-12">
                             <p> <input type="checkbox" name="seleziona" id=""> Seleziona per proseguire</p>
                         </div>
+
                         <div>
                             <button type="button" class="btn btn-primary">Salva</button>
                             <button type="button" class="btn btn-warning">Svuota</button>
                         </div>
+
                     </div>
+
                 </div>
+
             </div>
+            <!--end body offcavans-->
+
         </div>
+        <!--end section offcavans-->
+        
     </main>
 
     <footer>
